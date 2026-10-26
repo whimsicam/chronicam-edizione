@@ -50,7 +50,7 @@ jobs:
           path: _site
           retention-days: 1
       - uses: actions/deploy-pages@v4
-      - name: Cancella l'artefatto (repo pubblico: non deve restare scaricabile)
+      - name: Cancella l'artefatto, che in un repo pubblico resterebbe scaricabile
         if: always()
         continue-on-error: true
         env:
